@@ -33,9 +33,8 @@ h1 {
 
 button {
   position: absolute;
-  margin: 5rem 0 0;
   color: #ffffff;
-  background-color: #f3d2d2;
+  background-color: rgba(243, 210, 210, 0.8);
   border-radius: 1rem;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
@@ -46,6 +45,20 @@ button {
 button:hover {
   background-color: #f3d2d2cc;
   cursor: pointer;
+}
+
+p {
+  margin: 0.5rem 0 0;
+  color: #764c4c;
+  font-size: 1.5rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border: 0.5rem solid #533d3d;
+  box-shadow: 0 0 1rem #533d3d88;
 }
 
 .logo {
