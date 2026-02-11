@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'Joyful';
+  src: url('/joyful.ttf') format('truetype');
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Joyful', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +16,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -18,11 +25,21 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background-image: url('/fr_vday_proj/src/assets/background.png');
-  background-size: 300px 300px;
+  width: 100%;
+  height: 100vh;
+  background-image: url('background.png');
+  background-size: 275px 275px;
   background-repeat: repeat;
   background-position: 0 0;
-  animation: fallingBackground 15s linear infinite;
+  animation: fallingBackground 10s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes fallingBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 275px;
+  }
 }
